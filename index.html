@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="back-img" src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    <section id="header">
+        <div id="div-img">
+            <img id="css-logo" src="css_logo.png" alt="">
+        </div>
+        <div id="div-titulo">
+            <h1 id="titulo">Tilha de CSS da DIO</h1>
+        </div>
+        <div id="div-p">
+            <p id="paragrafo">A nova trilha de CSS da DIO está disponível. Acesse já e aprenda do zero desenvolver sites profissionais</p>
+        </div>
+        <div id="div-btn">
+            <button id="btn-join">QUERO ME INSCREVER</button>
+
+        </div>
+        <div id="main">
+            <div id="div-titulo">
+                <h1 id="titulo">O QUE VOU APRENDER?</h1>
+            </div>
+            <div id="div-p">
+                <p id="paragrafo2">
+                    Temos 3 módulos recheados de conteúdos do básico ao avançado para que você aprenda a desenvolver sites profissionais utilizando somente HTML e CSS: sem nenhuma biblioteca ou framework a mais.
+                </p>
+                
+            </div>
+            <div id="div-md1">
+                <button id="btn-md1">Módulo 01: <p>primeiros passos com CSS</p></button>
+            </div>
+            <div id="div-md2">
+                <button id="btn-md2">Módulo 02: <p>trabalhando com layouts no CSS</p></button>
+
+            </div>
+            <div id="div-md3">
+                <button id="btn-md3">Módulo 03: <p>refinando os estilos CSS das nossas páginas</p></button>
+
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div id="div-futuro">
+            <h1>
+                Transforme o mundo com a gente
+            </h1>
+        </div>
+    </section>
+    <section id="dio-feedback">
+        <div id="dio-div">
+            <img src="https://www.figma.com/file/3PiokoJj9IhGDnNiWAJbz7/image/22d5028a6cf2946224ea191883566dd75d50757a" alt="" id="dio-img">
+            <p>
+                Junte-se ao nosso ecossistema e transforme o mundo com a gente! Todos os dias dezenas de empresas acessam a nossa plataforma em busca dos talentos mais criativos, dinâmicos e colaborativos, além do conhecimento técnico. A nossa missão é te preparar para que você conecte-se com as melhores oportunidades.
+            </p> 
+            <div id="footer-div">
+                <img src="/footer_dio.png" alt="" id="img-footer">
+        
+            </div>
+        </div>
+    </section>
+
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&family=Protest+Strike&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+    * {
+        margin: 0;
+        list-style: none;
+        box-sizing: border-box;
+    }
+    #back-img {
+        z-index: -1;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+
+    }
+    #header {
+
+        min-width: 100%;
+        min-height: 100vh;
+        background: rgb(2,0,36);
+        background: linear-gradient(180deg, rgb(0, 0, 0) 10%, rgb(1, 46, 88) 30%, rgb(0, 0, 0) 70%);
+        max-width: 500px;
+    }
+    #div-img, #div-titulo, #div-btn {
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+
+    }
+    #css-logo {
+        max-width: 120px;
+        border-radius: 50%;
+        
+    }
+
+    #titulo, #paragrafo {
+        color: white;
+        font-family: "Anta", sans-serif;
+        font-size: 15px;
+        max-width: 30vw;
+    }
+
+    #btn-join {
+        min-width: 300px;
+        min-height: 40px;
+        background-color: transparent;
+        border-color: rgb(9, 133, 248);
+        color: rgb(9, 133, 248);
+        font-family: "Anta", sans-serif;
+        margin: 15px;
+    }
+
+    #btn-md1, #btn-md2, #btn-md3 {
+        min-width: 300px;
+        min-height: 40px;
+        background-color: transparent;
+        border-color: rgb(9, 133, 248);
+        border-radius: 20px;
+        color: rgb(9, 133, 248);
+        font-family: "Anta", sans-serif;
+        margin: 15px;
+    }
+
+    #btn-join:hover {
+        background-color: rgba(255, 255, 255, 0.062);
+        color: rgba(255, 255, 255, 0.411);
+        border-color: rgb(204, 204, 204);
+        
+    }
+    #paragrafo2 {
+        color: white;
+        font-family: "Anta", sans-serif;
+        font-size: 14px;
+        max-width: 700px;
+    }
+    #main {
+        min-height: 50vh;
+        border-top: 1px solid rgb(9, 133, 248);
+        border-bottom: 1px solid rgb(9, 133, 248);
+        max-height: 100%;
+    }
+
+    #div-p, #div-md1, #div-md2, #div-md3, #footer-div {
+        display: flex;
+        justify-content: center;
+    }
+
+    button p {
+        color: aliceblue;
+    }
+
+    #div-futuro {
+        min-height: 300px;
+    }
+
+    #div-futuro h1{
+        text-shadow: 2px 2px rgb(247, 19, 255), -1px 3px rgb(60, 255, 0);
+        padding-top: 70px; 
+        padding-left: 20px;
+        font-family: "Protest Strike", sans-serif;
+        color: aliceblue;
+        font-size: 40px;
+        max-width: 260px;
+        
+
+    }
+
+    #dio-feedback {
+        min-width: 100vw;
+        min-height: 100vh;
+        background: rgb(2,0,36);
+        background: linear-gradient(180deg, rgb(0, 0, 0) 10%, rgb(1, 46, 88) 30%, rgb(0, 0, 0) 70%);
+        max-width: 500px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #dio-div {
+
+        min-width: 30%;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: aliceblue;
+    }
+
+    #dio-img {
+        margin-left: 25%;
+        width: 40vw;
+        max-height: 70vh;
+    }
+
+    #dio-div p {
+        color: white;
+        font-family: "Anta", sans-serif;
+        font-size: 15px;
+        max-width: 70vw;
+    }
+
+    #footer-div {
+        padding-top: 15vh;
+    }
+
+</style>
+</html>
